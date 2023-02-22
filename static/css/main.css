@@ -1,0 +1,40 @@
+.Zagolovok p-md-5 m-md-10 text-center {
+    background: #000 url(./static/images/late.jpg); /* Фоновый цвет и фоновый рисунок*/
+	color: #fff; /*Цвет текста на странице*/
+	background-attachment: fixed; /* Фон страницы фиксируется */
+	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+	font-size: 30px;
+}
+.image {
+    margin-bottom: 10px;
+}
+.image img {
+    height: 300px;
+    weight: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.info h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.info-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+.add-to-cart {
+    border: none;
+    weight: 40px;
+    height:40px;
+    background-color: #538de3;
+    border-radius: 10px;
+}
+.price {
+    font-weight: 700;
+    font-size: 18px;
+
+}

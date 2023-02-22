@@ -1,0 +1,18 @@
+{% extends 'body.html' %}
+
+{% block title%}
+Карзина
+{% endblock %}
+{% block body%}
+<dialog open>
+  <p>Ваши товары</p>
+  <form method="dialog">
+      <form action="/thenks" target="_blank">
+          <button>Купить</button>
+      </form>
+      <form action="/" target="_blank">
+          <button>ОТМЕНА</button>
+      </form>
+  </form>
+</dialog>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'body.html' %}
+
+{% block title%}
+Главная страница
+{% endblock %}
+{% block body%}
+<div class="Zagolovok p-md-5 m-md-10 text-center">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal"><ya-tr-span data-type="trSpan" data-selected="false">Заголовок</ya-tr-span></h1>
+      <p class="lead fw-normal"><ya-tr-span data-type="trSpan">подзаголовок. </ya-tr-span><ya-tr-span data-ch="0" data-type="trSpan">Начните.</ya-tr-span></p>
+      <a class="btn btn-outline-secondary" href="#"><ya-tr-span data-type="trSpan">Скоро выйдет</ya-tr-span></a>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="product">
+                <div class="image">
+                    <img src=".\static\images\late.jpg" alt="">
+                </div>
+                <div class="info h3">
+                    <h3>название товара</h3>
+                    <div class="info-price">
+                        <span class="price">150₽</span>
+                        <button class="add-to-cart" href="/about">Добавить в корзину</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer class="container py-3">
+    <p class="float-end">
+        <a href="/"><ya-tr-span data-type="trSpan">Наверх</ya-tr-span></a></p>
+    <p><ya-tr-span data-type="trSpan" data-selected="false"> 2023 Bodrcoffee</ya-tr-span>
+        <a href="/we"><ya-tr-span data-type="trSpan" data-selected="false">О нас</ya-tr-span></a>
+  </footer>
+{% endblock %}
