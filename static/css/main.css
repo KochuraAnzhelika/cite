@@ -24,6 +24,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-top: 10px;
+    +-
     align-items: center;
 }
 .add-to-cart {
@@ -38,3 +39,117 @@
     font-size: 18px;
 
 }
+.static-text {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+.vi_text {
+
+}
+.coffe_1 {
+    display: flex;
+    column-gap: 40px;
+    padding: 20px;
+}
+.title{
+    color: rgb(59, 40, 5);
+
+
+}
+.information{
+    font-size: 20px;
+}
+.buy{
+    align-items: end;
+    display: flex;
+    column-gap: 100px;
+    padding: 20px;
+    font-size: 20px;
+}
+.name{
+    padding: 20px;
+    text-decoration: underline;
+}
+.name_2{
+    padding: 20px;
+    text-decoration: underline;
+}
+.name_3{
+    padding: 20px;
+    text-decoration: underline;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+
+}
+.btn-1 {
+    background: rgb(59, 40, 5);
+    background: linear-gradient(0deg, rgb(150, 108, 29) 0%, rgb(209, 185, 148) 100%);
+    border: none;
+}
+.btn-1:hover {
+    background: rgb(59, 40, 5);
+    background: linear-gradient(0deg, rgb(97, 66, 9) 0%, rgb(153, 135, 109) 100%);
+}
+.bt_minus{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    background: linear-gradient(0deg, rgb(150, 108, 29) 0%, rgb(209, 185, 148) 100%);
+    border: none;
+}
+.bt_minus:hover{
+    background: linear-gradient(0deg, rgb(97, 66, 9) 0%, rgb(153, 135, 109) 100%);
+
+}
+.bt_plus{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    background: linear-gradient(0deg, rgb(150, 108, 29) 0%, rgb(209, 185, 148) 100%);
+    border: none;
+
+}
+.bt_plus:hover{
+    background: linear-gradient(0deg, rgb(97, 66, 9) 0%, rgb(153, 135, 109) 100%);
+
+}
+.quantity{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    text-align: center;
+
+}
+
