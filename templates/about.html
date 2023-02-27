@@ -4,15 +4,21 @@
 Кoрзина
 {% endblock %}
 {% block body%}
-<dialog open>
-  <p>Ваши товары</p>
-  <form method="dialog">
-      <form action="/thenks" target="_blank">
-          <button>Купить</button>
-      </form>
-      <form action="/" target="_blank">
-          <button>ОТМЕНА</button>
-      </form>
-  </form>
-</dialog>
+{% if message %}
+        <p>{{ message }}p>
+    {% endif %}
+
+    <form action="" method="post">
+        <p>
+	    <label for="username">Usernamelabel>
+	    <input type="text" name="username">
+	p>
+	<p>
+	    <label for="password">Passwordlabel>
+	    <input type="password" name="password">
+	p>
+	<p>
+	    <input type="submit">
+	p>
+    form>
 {% endblock %}

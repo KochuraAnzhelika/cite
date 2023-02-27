@@ -27,13 +27,6 @@
     +-
     align-items: center;
 }
-.add-to-cart {
-    border: none;
-    weight: 40px;
-    height:40px;
-    background-color: #538de3;
-    border-radius: 10px;
-}
 .price {
     font-weight: 700;
     font-size: 18px;

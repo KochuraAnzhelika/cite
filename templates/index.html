@@ -4,6 +4,70 @@
 Главная страница
 {% endblock %}
 {% block body%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('a#forvard').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard1').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard1',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard1').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard1',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard2').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard2',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard2').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard2',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+</script>
+
 <div class="Zagolovok p-md-5 m-md-10 text-center">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="display-4 fw-normal"><ya-tr-span data-type="trSpan" data-selected="false">Заголовок</ya-tr-span></h1>
@@ -19,28 +83,33 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Экспрессо </h1>
-            <span class="information">Эспрессо – чёрный кофе, приготовленный в кофемашине или специальной кофеваркe. Готовый напиток имеет плотную пенку однородного золотисто-орехового цвета, толщиной не менее 2 мм. Во вкусе эспрессо гармонично сочетаются сладость, горечь и лёгкая кислинка.</span>
+            <span class="information">Экспрессо - напиток, который состоит из воды и тщательно измельчённых кофейных зёрен. Во вкусе экспрессо гармонично сочетаются сладость, горечь и лёгкая кислинка.</span>
 
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 100 руб.</span>
+                        {{servoс}}
+                        <span>  руб.</span>
                     </div>
-
                 </div>
                 <div class="apartament_1">
                     <div class="weight">
-                        <span> 30 мл</span>
+                        <span> 50 мл</span>
                     </div>
 
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
-        </div>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard" id="resvard"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo1}}
+                <a href="forvard" id="forvard"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
+
+            </form>
+
     </selection>
+
+
 
     <selection class="coffe_1">
         <div class="coffe_img">
@@ -48,32 +117,32 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Американо </h1>
-            <span class="information"> Американо - амый простой и классический черный кофе на основе эспрессо. В американо добавляется немного горячей воды. По желанию можно добавить сахар, сливки, молоко или даже лед.</span>
+            <span class="information"> Американо - это крепкий кофе, который разбавляют водой. Вкус у американо мягкий, не четко выраженный, отсутствует горчинка, может проявляться легкая кислинка. В кофе можно добавить сахар, сливки, молоко.</span>
 
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 120 руб.</span>
-                    </div>
-                    <div class="price_1">
-                        <span> 240 руб.</span>
+                        {{servod}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
                     <div class="weight">
                         <span> 150 мл</span>
                     </div>
-                    <div class="weight_1">
-                        <span> 250 мл</span>
-                    </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard1" id="resvard1"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo2}}
+                <a href="forvard1" id="forvard1"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
+
+            </form>
         </div>
     </selection>
+
+
 
     <selection class="coffe_1">
         <div class="coffe_img">
@@ -81,12 +150,13 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Доппио </h1>
-            <span class="information"> Доппио – это всегда две порции эспрессо, налитые в одну чашку. От обычной порции эспрессо доппио отличается только объёмом и удвоенным количеством кофеина в составе.</span>
+            <span class="information"> Доппио – это две порции эспрессо. Вкус доппио очень насыщенный и плотный, богат вкусовыми оттенками — ореховыми нотками с примесью трав, с легкой горчинкой.</span>
 
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 150 руб.</span>
+                        {{servov}}
+                        <span> руб.</span>
                     </div>
 
                 </div>
@@ -96,10 +166,13 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard2" id="resvard2"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo3}}
+                <a href="forvard2" id="forvard2"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
+
+            </form>
         </div>
     </selection>
 
@@ -110,23 +183,17 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Капучино </h1>
-            <span class="information">Капучино – итальянский кофейный напиток на основе эспрессо. Классический вариант включает в себя двойную порцию черного кофе, горячее молоко и густую молочную пену, еще добавляют в напиток корицу, шоколадную крошку, апельсиновую цедру. Капучино обладает мягким вкусом с легкой кофейной горчинкой. Напиток получается сладковатым даже без добавления сахара.</span>
+            <span class="information">Капучино – кофейный напиток на основе эспрессо, с добавлением молока. Капучино обладает мягким вкусом с легкой кофейной горчинкой. Напиток получается сладковатым даже без добавления сахара.</span>
 
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
                         <span> 150 руб.</span>
                     </div>
-                    <div class="price_1">
-                        <span> 250 руб.</span>
-                    </div>
                 </div>
                 <div class="apartament_1">
                     <div class="weight">
                         <span> 200 мл</span>
-                    </div>
-                    <div class="weight_1">
-                        <span> 350 мл</span>
                     </div>
                 </div>
             </div>
@@ -143,7 +210,7 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Латте </h1>
-            <span class="information">Латте напоминает капучино, но в нем больше вспененного молока. И если в капучино идет только пена, то в латте есть еще и обычный молочный слой.</span>
+            <span class="information">Латте похож на капучино, но он менее крепкий. По вкусу нежный, сливочно-молочный.</span>
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
@@ -169,7 +236,7 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Венский кофе </h1>
-            <span class="information">Венский меланж представляет собой подслащенный черный кофе, на который сверху выкладывают сливочную пенку либо взбитые сливки. Шапку из взбитых сливок часто посыпают корицей, тертым шоколадом, цедрой, топингами.</span>
+            <span class="information">Венский кофе - это напиток, готовящийся с добавлением молока, сливок, шоколада. По вкусу сливочный и мягкий.</span>
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
@@ -196,7 +263,7 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Фраппе </h1>
-            <span class="information">Фраппе – чёрный кофе с пенкой, взбитый со льдом. В напиток добавляют сахар, молоко, сливки, мороженое, ликёры, сиропы, пряности. Фраппе обязательно взбивают, этим он отличается от всех других разновидностей айс кофе.</span>
+            <span class="information">Фраппе – чёрный кофе с пенкой, взбитый со льдом. Вкус фраппе имеет ярко выраженный кофейный, с ореховыми акцентами.</span>
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
@@ -222,7 +289,7 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Эспрессо-тоник </h1>
-            <span class="information">Эспрессо-тоник - один из популярных летних безалкогольных коктейлей. В нём используется тоник, который дает умеренную горечь. При этом сладости практически не ощущается.</span>
+            <span class="information">Эспрессо-тоник - это холодный и освежающий напиток. В нём используется тоник, который дает умеренную горечь. Сладости практически не ощущается.</span>
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
@@ -248,7 +315,7 @@
         </div>
         <div class="descriptoin">
             <h1 class="title"> Кофейный смузи </h1>
-            <span class="information">Кофеный смузи - смузи на основе эспрессо и йогурта. В него добавляют свежие ягоды или фрукты, немного какао и специи.</span>
+            <span class="information">Кофеный смузи - смузи на основе эспрессо и йогурта. В него добавляют свежие ягоды или фрукты. Вкусный и ароматный.</span>
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
@@ -279,4 +346,5 @@
     <p><ya-tr-span data-type="trSpan" data-selected="false"> 2023 Bodrcoffee</ya-tr-span>
         <a href="/we"><ya-tr-span data-type="trSpan" data-selected="false">О нас</ya-tr-span></a>
   </footer>
+
 {% endblock %}
