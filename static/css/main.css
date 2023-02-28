@@ -1,9 +1,10 @@
 .Zagolovok p-md-5 m-md-10 text-center {
     background: #000 url(./static/images/late.jpg); /* Фоновый цвет и фоновый рисунок*/
 	color: #fff; /*Цвет текста на странице*/
-	background-attachment: fixed; /* Фон страницы фиксируется */
-	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
 	font-size: 30px;
+}
+.body {
+    background: #fffff;
 }
 .image {
     margin-bottom: 10px;
@@ -81,9 +82,7 @@
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
-    outline: none;
 
 }
 .btn-1 {
@@ -103,7 +102,6 @@
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
     background: linear-gradient(0deg, rgb(150, 108, 29) 0%, rgb(209, 185, 148) 100%);
@@ -121,7 +119,6 @@
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
     background: linear-gradient(0deg, rgb(150, 108, 29) 0%, rgb(209, 185, 148) 100%);
@@ -145,4 +142,135 @@
     text-align: center;
 
 }
+.text{
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    border-style: double;
+    border-color: rgb(136, 47, 47);
 
+}
+.te{
+    text-align: center;
+
+}
+.yes{
+    margin: 0 auto;
+    text-decoration: underline;
+    text-decoration-color: rgb(136, 47, 47) ;
+    text-align: center;
+    color: rgb(136, 47, 47);
+}
+.header {
+    height: 40px;
+    padding: 20px 20px 0;
+    background: #e1e1e1;
+}
+.main-content {
+    height: 60vh;
+    padding: 20px;
+}
+footer {
+    padding: 10px 20px;
+    background: #666;
+    color: rgb(255, 229, 229);
+}
+a {
+    color: #00aaff;
+}
+
+.sec-footer{
+    background: #574235;
+    direction: rtl;
+    text-align: right;
+    color: #cfc8c8;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+.sec-footer .desc-box{
+    background: transparent;
+    border: 0;
+}
+.sec-footer .desc-box .card-title::after{
+    content: ' ';
+    background: #cfc8c8;
+    display: block;
+    width: 95%;
+    height: 0.2rem;
+    margin-top:0.3rem;
+}
+.sec-footer .desc-box .card-text{
+    font-family:iranyekan_light;
+    text-align: justify;
+}
+.sec-sub-footer{
+    background: #e9dfd8;
+    direction: rtl;
+    text-align: right;
+    color: #000;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size:0.8rem;
+}
+.sec-sub-footer a{
+    font-size:0.8rem;
+}
+
+
+
+/*------------------*/
+.snip1472 {
+    position: relative;
+    font-size: 20px;
+    color: #cfc8c8;
+    width: 45px;
+    margin: 4px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.snip1472:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid #9b9090;
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+}
+.snip1472:before {
+    color: #fff;
+}
+.snip1472:before,
+.snip1472:after {
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+}
+.snip1472:hover,
+.snip1472:active,
+.snip1472.hover {
+    color: #CFC9C9;
+}
+.snip1472:hover:after,
+.snip1472:active:after,
+.snip1472.hover:after {
+    border-color: #8B7F7F transparent #8B7F7F transparent;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.shapka{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    background: #e9dfd8;
+}

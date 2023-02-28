@@ -187,17 +187,17 @@
         });
     });
 </script>
-
-<div class="Zagolovok p-md-5 m-md-10 text-center">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal"><ya-tr-span data-type="trSpan" data-selected="false">Заголовок</ya-tr-span></h1>
-      <p class="lead fw-normal"><ya-tr-span data-type="trSpan">подзаголовок. </ya-tr-span><ya-tr-span data-ch="0" data-type="trSpan">Начните.</ya-tr-span></p>
-      <a class="btn btn-outline-secondary" href="#"><ya-tr-span data-type="trSpan">Скоро выйдет</ya-tr-span></a>
+<div class="body">
+    <div class="Zagolovok p-md-5 text-center">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+         <h1 class="display-4 fw-normal"><ya-tr-span data-type="trSpan" data-selected="">Заголовок</ya-tr-span></h1>
+          <p class="lead fw-normal"><ya-tr-span data-type="trSpan">подзаголовок. </ya-tr-span><ya-tr-span data-type="trSpan">Начните.</ya-tr-span></p>
+        <a class="btn btn-outline-secondary" href="#"><ya-tr-span data-type="trSpan">Скоро выйдет</ya-tr-span></a>
+        </div>
     </div>
-</div>
 
     <h1 class="name"> Кофейные напитки на основе эспрессо</h1>
-    <selection class="coffe_1">
+    <selection class="coffe_1" id="Jump-here">
         <div class="coffe_img">
             <img src="./static/images/экспрессо.jpg" width="500" height="400">
         </div>
@@ -220,10 +220,10 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
-                <a href="resvard" id="resvard"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
+                <a href="resvard" id="resvard"><button class="bt_minus" type="button" name="button" onClick="history.go(0);">-</button></a>
             {{servo1}}
-                <a href="forvard" id="forvard"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+                <a href="forvard" id="forvard"><button class="bt_plus" type="button" name="button" onClick="history.go(0);">+</button></a>
             </form>
             </div>
     </selection>
@@ -252,7 +252,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                 <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard1" id="resvard1"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo2}}
                 <a href="forvard1" id="forvard1"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -286,7 +286,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                 <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard2" id="resvard2"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo3}}
                 <a href="forvard2" id="forvard2"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -319,7 +319,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard3" id="resvard3"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo4}}
                 <a href="forvard3" id="forvard3"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -350,7 +350,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard4" id="resvard4"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo5}}
                 <a href="forvard4" id="forvard4"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -383,7 +383,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard5" id="resvard5"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo6}}
                 <a href="forvard5" id="forvard5"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -413,7 +413,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard6" id="resvard6"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo7}}
                 <a href="forvard6" id="forvard6"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -443,7 +443,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard7" id="resvard7"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo8}}
                 <a href="forvard7" id="forvard7"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -473,7 +473,7 @@
                 </div>
             </div>
             <form>
-                <button class="custom-btn btn-1">Купить</button>
+                <a href="pasibo"><button class="custom-btn btn-1" type="button">Купить</button></a>
                 <a href="resvard8" id="resvard8"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo9}}
                 <a href="forvard8" id="forvard8"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
@@ -481,14 +481,81 @@
             </form>
         </div>
     </selection>
+</div>
 
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<footer class="container py-3">
-    <p class="float-end">
-        <a href="/"><ya-tr-span data-type="trSpan">Наверх</ya-tr-span></a></p>
-    <p><ya-tr-span data-type="trSpan" data-selected="false"> 2023 Bodrcoffee</ya-tr-span>
-        <a href="/we"><ya-tr-span data-type="trSpan" data-selected="false">О нас</ya-tr-span></a>
-  </footer>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+<section class="container-fluid sec-footer" id="Jump-here2">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card desc-box">
+                    <div class="card-body">
+                        <div class="card-title">О нас</div>
+                        <div class="card-text">
+                            <p>Низкие цены на любимые напитки<br>
+                            Быстрая доставка по колледжу<br>
+                            Скидки для постоянных покупателей</p>
+                        </div>
+                    </div>
+                </div><!--.card-->
+            </div><!--.col-->
+            <div class="col">
+                <div class="card desc-box">
+                    <div class="card-body">
+                        <div class="card-title">Данные</div>
+                        <div class="card-text">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fas fa-phone ml-3"></i>
+                                    <span>8-920-160-08-94</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fas fa-map-marker ml-3"></i>
+                                    <span>г.Тверь, наб.Реки Лазури</span>
+                                </div>
+                            </div><!--.row-->
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fas fa-envelope-open ml-3"></i>
+                                    <span>bodrcoffee@gmail.com</span>
+                                </div><!--.col-->
+                            </div><!--.row-->
+                        </div><!--.card-text-->
+                    </div>
+                </div><!--.card-->
+            </div><!--.col-->
+            <div class="col text-center">
+                <img src="https://i.ibb.co/tCL8NxR/bodr-coffe.jpg" alt="Bodrcoffee" class="mb-3">
+                <br class="clearfix">
+                <a href="https://vk.com/likakochura" class="snip1472"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://vk.com/me.natasha" class="snip1472"><i class="fab fa-instagram"></i></a>
+                <a href="https://vk.com/ytu_nytu" class="snip1472"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://vk.com/ddazzaikka" class="snip1472"><i class="fab fa-google-plus-g"></i></a>
+            </div><!--.col-->
+        </div><!--.row-->
+    </div>
+</section>
+<section class="container-fluid sec-sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="/" style="color: #574235"><ya-tr-span data-type="trSpan">Наверх</ya-tr-span></a>
+            </div><!--.col-->
+            <div class="col text-left">
+                <a href="https://damion.club/uploads/posts/2022-11/1668680661_damion-club-p-milie-kotiki-v-odezhde-vkontakte-79.jpg" class="f-light text-dark"><ya-tr-span data-type="trSpan">MEOW</ya-tr-span></a>
+            </div><!--.col-->
+        </div><!--.row-->
+    </div>
+</section>
 
 {% endblock %}

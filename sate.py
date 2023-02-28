@@ -49,11 +49,6 @@ def resvard():
     print(servo1)
     return ("nothing")
 
-
-
-
-
-
 @app.route('/forvard1')
 def forvard1():
     global servod
@@ -76,15 +71,12 @@ def resvard1():
     return ("nothing")
 
 
-
-
-
 @app.route('/forvard2')
 def forvard2():
     global servov
     global servo3
     servo3 = servo3+1
-    servov += 120
+    servov += 150
     print(servov)
     print(servo3)
     return ("nothing")
@@ -95,7 +87,7 @@ def resvard2():
     global servov
     if servo3 > 1:
         servo3 = servo3-1
-        servov -= 120
+        servov -= 150
     print(servov)
     print(servo3)
     return ("nothing")
@@ -152,7 +144,7 @@ def forvard5():
     global servoa
     global servo6
     servo6 = servo6+1
-    servoa += 150
+    servoa += 170
     print(servoa)
     print(servo6)
     return ("nothing")
@@ -163,7 +155,7 @@ def resvard5():
     global servoa
     if servo6 > 1:
         servo6 = servo6-1
-        servoa -= 150
+        servoa -= 170
     print(servoa)
     print(servo6)
     return ("nothing")
@@ -174,7 +166,7 @@ def forvard6():
     global servob
     global servo7
     servo7 = servo7+1
-    servob += 150
+    servob += 210
     print(servob)
     print(servo7)
     return ("nothing")
@@ -185,7 +177,7 @@ def resvard6():
     global servob
     if servo7 > 1:
         servo7 = servo7-1
-        servob -= 150
+        servob -= 210
     print(servob)
     print(servo7)
     return ("nothing")
@@ -196,7 +188,7 @@ def forvard7():
     global servow
     global servo8
     servo8 = servo8+1
-    servow += 150
+    servow += 220
     print(servow)
     print(servo8)
     return ("nothing")
@@ -207,7 +199,7 @@ def resvard7():
     global servow
     if servo8 > 1:
         servo8 = servo8-1
-        servow -= 150
+        servow -= 220
     print(servow)
     print(servo8)
     return ("nothing")
@@ -217,7 +209,7 @@ def forvard8():
     global servop
     global servo9
     servo9 = servo9+1
-    servop += 150
+    servop += 250
     print(servop)
     print(servo9)
     return ("nothing")
@@ -228,29 +220,20 @@ def resvard8():
     global servop
     if servo9 > 1:
         servo9 = servo9-1
-        servop -= 150
+        servop -= 250
     print(servop)
     print(servo9)
     return ("nothing")
-
-
-
-
-
-@app.route('/about')
-def about():
-    return render_template("about.html")
-
-
-@app.route('/we')
-def we():
-    return render_template("we.html")
 
 
 @app.route('/thenks')
 def thenks():
     return render_template("thenks.html")
 
+
+@app.route('/pasibo')
+def pasibo():
+    return render_template("pasibo.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
