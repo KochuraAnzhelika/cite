@@ -66,6 +66,126 @@
             return false;
         });
     });
+    $(function() {
+        $('a#forvard3').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard3',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard3').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard3',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard4').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard4',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard4').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard4',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard5').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard5',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard5').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard5',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard6').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard6',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard6').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard6',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard7').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard7',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard7').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard7',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#forvard8').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/forvard8',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
+    $(function() {
+        $('a#resvard8').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/resvard8',
+                function(data) {
+             //do nothing
+            });
+            return false;
+        });
+    });
 </script>
 
 <div class="Zagolovok p-md-5 m-md-10 text-center">
@@ -103,10 +223,9 @@
                 <button class="custom-btn btn-1">Купить</button>
                 <a href="resvard" id="resvard"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo1}}
-                <a href="forvard" id="forvard"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
-
+                <a href="forvard" id="forvard"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
             </form>
-
+            </div>
     </selection>
 
 
@@ -136,7 +255,7 @@
                 <button class="custom-btn btn-1">Купить</button>
                 <a href="resvard1" id="resvard1"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo2}}
-                <a href="forvard1" id="forvard1"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
+                <a href="forvard1" id="forvard1"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
 
             </form>
         </div>
@@ -170,11 +289,12 @@
                 <button class="custom-btn btn-1">Купить</button>
                 <a href="resvard2" id="resvard2"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
             {{servo3}}
-                <a href="forvard2" id="forvard2"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></div></a>
+                <a href="forvard2" id="forvard2"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
 
             </form>
         </div>
     </selection>
+
 
     <h1 class="name_2">Кофейные напитки с молоком</h1>
     <selection class="coffe_1">
@@ -188,7 +308,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 150 руб.</span>
+                        {{servoh}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -197,12 +318,16 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard3" id="resvard3"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo4}}
+                <a href="forvard3" id="forvard3"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+            </form>
         </div>
     </selection>
+
+
 
     <selection class="coffe_1">
         <div class="coffe_img">
@@ -214,7 +339,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 150 руб.</span>
+                        {{servot}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -223,12 +349,18 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard4" id="resvard4"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo5}}
+                <a href="forvard4" id="forvard4"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+
+            </form>
         </div>
     </selection>
+
+
+
 
     <selection class="coffe_1">
         <div class="coffe_img">
@@ -240,7 +372,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 170 руб.</span>
+                        {{servoa}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -249,11 +382,13 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
-        </div>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard5" id="resvard5"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo6}}
+                <a href="forvard5" id="forvard5"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+
+            </form></div>
     </selection>
 
     <h1 class="name_3">Холодные кофейные напитки</h1>
@@ -267,7 +402,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 210 руб.</span>
+                        {{servob}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -276,10 +412,13 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard6" id="resvard6"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo7}}
+                <a href="forvard6" id="forvard6"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+
+            </form>
         </div>
     </selection>
 
@@ -293,7 +432,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 220 руб.</span>
+                         {{servow}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -302,10 +442,13 @@
                     </div>
                 </div>
             </div>
-            <button class="custom-btn btn-1">Купить</button>
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
+            <form>
+                <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard7" id="resvard7"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo8}}
+                <a href="forvard7" id="forvard7"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
+
+            </form>
         </div>
     </selection>
 
@@ -319,7 +462,8 @@
             <div class="buy">
                 <div class="apartament">
                     <div class="price">
-                        <span> 250 руб.</span>
+                        {{servop}}
+                        <span> руб.</span>
                     </div>
                 </div>
                 <div class="apartament_1">
@@ -328,13 +472,13 @@
                     </div>
                 </div>
             </div>
-
+            <form>
                 <button class="custom-btn btn-1">Купить</button>
+                <a href="resvard8" id="resvard8"><button class="bt_minus" type="button" name="button" onClick="window.location.reload()">-</button></a>
+            {{servo9}}
+                <a href="forvard8" id="forvard8"><button class="bt_plus" type="button" name="button" onClick="window.location.reload()">+</button></a>
 
-                <button class="bt_minus">-</button>
-                <input type="text" value="1" size="2" class="quantity" data-max-count="20">
-                <button class="bt_plus">+</button>
-
+            </form>
         </div>
     </selection>
 
