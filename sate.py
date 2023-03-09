@@ -225,15 +225,16 @@ def resvard8():
     print(servo9)
     return ("nothing")
 
-
-@app.route('/thenks')
-def thenks():
-    return render_template("thenks.html")
-
-
 @app.route('/pasibo')
 def pasibo():
     return render_template("pasibo.html")
 
+
+@app.route('/reg')
+def reg():
+    return render_template("reg.html")
+
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run("0.0.0.0")
