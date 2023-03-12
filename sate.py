@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 servo1 = 1
 servoс = 100
 servo2 = 1
@@ -230,8 +230,10 @@ def pasibo():
     return render_template("pasibo.html")
 
 
-@app.route('/reg')
+@app.route('/reg', methods=["POST", "GET"])
 def reg():
+    if request.method == "POST":
+        print(request.form)
     return render_template("reg.html")
 
 
