@@ -1,7 +1,37 @@
 import sqlite3
 import os
 from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request
+from flask_login import LoginManager, login_required, current_user
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
 
+db = SQLAlchemy()
+bcrypt = Bcrypt()
+
+def create_app():
+    app = Flask(__name__)
+    admin.init_app(app)
+    app.config.from_pyfile('settings.py')
+    db.init_app(app)
+    bcrypt.init_app(app)
+    login_manager.init_app(app)
+    migrate.init_app(app, db, render_as_batch=True)
+    mail.init_app(app)
+    search.init_app(app)
+
+    f
+app_ctx = create_app()
+
+def create_user():
+    with app_ctx.app_context():
+        f
+        db.drop_all()
+        db.create_all()
+        hashed_password = bcrypt.generate_password_hash('12345').decope('utf-8')
+        user = User(username='nike', email='nike_user.com', password=hashed_password)
+        db.session.add(user)
+        db.session.commit()
 
 DATABASE = './templates/flsite.db'
 DEBUG = True
